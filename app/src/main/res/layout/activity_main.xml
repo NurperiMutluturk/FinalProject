@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pc.finalproject.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/sehirAdi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Şehir adını yazınız"
+                android:layout_margin="10dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/polis"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/infoPolis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Şehrinizin Polis imdat hattını bulmak için butona tıklayınız."
+                android:layout_margin="10dp"
+                android:background="#CEDBDF"
+                android:textSize="15dp"/>
+
+            <Button
+                android:id="@+id/polisBulBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BUL"
+                android:layout_margin="10dp"
+                android:onClick="polisClicked"/>
+
+            <TextView
+                android:id="@+id/msgPolis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="20dp"/>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/itfaiye"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/infoItfaiye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Şehrinizin İtfaiye hattını bulmak için butona tıklayınız."
+                android:layout_margin="10dp"
+                android:background="#CEDBDF"
+                android:textSize="15dp"/>
+
+            <Button
+                android:id="@+id/itfaiyeBulBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BUL"
+                android:layout_margin="10dp"
+                android:onClick="itfaiyeClicked"/>
+
+            <TextView
+                android:id="@+id/msgItfaiye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/trafik"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/infoTrafik"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Şehrinizin Alo Trafik hattını bulmak için butona tıklayınız."
+                android:layout_margin="10dp"
+                android:background="#CEDBDF"
+                android:textSize="15dp"/>
+
+            <Button
+                android:id="@+id/trafikBulBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BUL"
+                android:layout_margin="10dp"
+                android:onClick="trafikClicked"/>
+
+            <TextView
+                android:id="@+id/msgTrafik"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/acilservis"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/infoAcilServis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Şehrinizin Acil Servis hattını bulmak için butona tıklayınız."
+                android:layout_margin="10dp"
+                android:background="#CEDBDF"
+                android:textSize="15dp"/>
+
+            <Button
+                android:id="@+id/acilservisBulBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BUL"
+                android:layout_margin="10dp"
+                android:onClick="acilServisClicked"/>
+
+            <TextView
+                android:id="@+id/msgAcilServis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ormanyangini"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/infoOrmanYangini"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Şehrinizin Orman Yangını İhbar hattını bulmak için butona tıklayınız."
+                android:layout_margin="10dp"
+                android:background="#CEDBDF"
+                android:textSize="15dp"/>
+
+            <Button
+                android:id="@+id/ormanYanginiBulBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BUL"
+                android:layout_margin="10dp"
+                android:onClick="ormanYanginiClicked"/>
+
+            <TextView
+                android:id="@+id/msgOrmanYangini"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"/>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
